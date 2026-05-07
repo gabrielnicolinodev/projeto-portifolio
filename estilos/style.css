@@ -62,7 +62,7 @@ nav#menu a:hover{
   color: var(--destaque);
 }
 
-.material-symbols-outlined{
+header .material-symbols-outlined{
   font-variation-settings: 'FILL' 0;
 }
 
@@ -110,14 +110,61 @@ div#social{
   margin-top: 15px;
 }
 
-div#social a .icon{
+div#social a .icon-ficha{
   width: auto;
   height: 35px;
   fill: var(--destaque);
   transition: fill 0.5s;
 }
 
-div#social a .icon:hover{
+div#social a .icon-ficha:hover{
   fill: var(--destaque-inverso);
 }
 
+section#detalhes{
+  grid-column: 2;
+}
+
+article{
+  background-color: var(--fundo-card);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+article h2{
+  color: var(--destaque);
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+article#video .video-container{
+  position: relative;
+  width: 100%;
+  margin: auto;
+  aspect-ratio: 16/9;
+  border: 5px solid red;
+}
+
+.video-container iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+article .icon-detalhes{
+  width: auto;
+  height: 20px;
+  fill: var(--destaque);
+  margin-right: 2px;
+}
+
+article #icon-google{
+  font-variation-settings: 'FILL' 1;
+  font-size: 1.3em;
+  margin-right: 2px;
+}
